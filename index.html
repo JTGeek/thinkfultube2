@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YT API</title>
+</head>
+
+<body>
+  <div id="buttons">
+    <form id="search-form">
+      <input id="search-input" value="cats" type="text" />
+      <button id="search-button">Search</button>
+    </form>
+    <div id="container">
+      <h1>Search Results</h1>
+      <ul id="results"></ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
