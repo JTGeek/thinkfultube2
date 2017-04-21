@@ -21,6 +21,7 @@ function sendRequest() {
   request.execute(function (response) {
     console.log(response);
     $('#results').empty()
+    $('#resultsContainer').css('display', "inline-block");
     var srchItems = response.result.items;
     $.each(srchItems, function (index, item) {
       vidTitle = item.snippet.title;
