@@ -21,13 +21,13 @@ function sendRequest() {
   request.execute(function (response) {
     console.log(response);
     $('#results').empty()
-    $('#resultsContainer').css('display', "inline-block");
     var srchItems = response.result.items;
     $.each(srchItems, function (index, item) {
       vidTitle = item.snippet.title;
       vidThumburl = item.snippet.thumbnails.default.url;
-      vidThumbimg = '<pre><img id="thumb" src="' + vidThumburl +
-        '" alt="No  Image Available." style="width:204px;height:128px"></pre>';
+      vidUrl = '"https://www.youtube.com/watch?v=' + item.id.videoId + '"';
+      vidThumbimg = '<a href=' + vidUrl + '> <pre><img id="thumb" src="' + vidThumburl +
+        '" alt="No  Image Available." style="width:204px;height:128px"></pre></a>';
 
       $('#results').append('<pre>' + vidTitle + vidThumbimg + '</pre>');
     })

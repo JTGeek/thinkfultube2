@@ -1,16 +1,165 @@
-.input[type=text] {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
 }
 
-
-/* When the input field gets focus, change its width to 100% */
-
-input[type=text]:focus {
-    width: 100%;
+#search-form {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
 }
 
-#resultsContainer {
-    display: none;
+#search-form input {
+    position: absolute;
+    background-color: lightblue;
+    width: 0px;
+    float: Left;
+    margin-left: 210px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    height: 30px;
+    line-height: 18px;
+    padding: 0 2px 0 2px;
+    border-radius: 1px;
+}
+
+#search-form:hover input,
+#search-form input:focus {
+    width: 200px;
+    margin-left: 0px;
+}
+
+#search-button {
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius: 1px;
+}
+
+#container {
+    margin-top: 100px;
+}
+
+#heading {
+    margin-top: 25px;
+}
+
+#srTitle {
+    float: top;
+}
+
+img {
+    margin-left: 5px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+hgroup {
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+hgroup h1 {
+    font: 500 normal 1.625em "Roboto", Arial, Verdana, sans-serif;
+    color: #2a3644;
+    margin-top: 0;
+    line-height: 1.15;
+}
+
+hgroup h2.lead {
+    font: normal normal 1.125em "Roboto", Arial, Verdana, sans-serif;
+    color: #2a3644;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.search-result #thumb {
+    border-radius: 0 !important;
+}
+
+.search-result:first-child {
+    margin-top: 0 !important;
+}
+
+.search-result {
+    margin-top: 20px;
+}
+
+.search-result .col-md-2 {
+    border-right: 1px dotted #ccc;
+    min-height: 140px;
+}
+
+.search-result ul {
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+.search-result ul li {
+    font: 400 normal .85em "Roboto", Arial, Verdana, sans-serif;
+    line-height: 30px;
+}
+
+.search-result ul li i {
+    padding-right: 5px;
+}
+
+.search-result .col-md-7 {
+    position: relative;
+}
+
+.search-result h3 {
+    font: 500 normal 1.375em "Roboto", Arial, Verdana, sans-serif;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.search-result h3>a,
+.search-result i {
+    color: #248dc1 !important;
+}
+
+.search-result p {
+    font: normal normal 1.125em "Roboto", Arial, Verdana, sans-serif;
+}
+
+.search-result span.plus {
+    position: absolute;
+    right: 0;
+    top: 126px;
+}
+
+.search-result span.plus a {
+    background-color: #248dc1;
+    padding: 5px 5px 3px 5px;
+}
+
+.search-result span.plus a:hover {
+    background-color: #414141;
+}
+
+.search-result span.plus a i {
+    color: #fff !important;
+}
+
+.search-result span.border {
+    display: block;
+    width: 97%;
+    margin: 0 15px;
+    border-bottom: 1px dotted #ccc;
 }
