@@ -25,7 +25,7 @@ function sendRequest() {
     $.each(response.result.items, function (index, item) {
 
       var $template = $(
-        '<li><img class="thumbnail"><a class="url"><h3 class="title"></h3></a><p class="description"></p></li>'
+        '<li><a class="url"><img class="thumbnail"></a><a class="url"><h3 class="title"></h3></a><p class="description"></p></li>'
       );
 
       $template
