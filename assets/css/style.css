@@ -58,7 +58,7 @@ form {
 }
 
 #results li .title {
-    font-size: x-small;
+    font-size: medium;
     font-variant: small-caps;
     text-align: center;
 }
@@ -70,6 +70,6 @@ form {
 }
 
 #results li .description {
-    font-size: xx-small;
+    font-size: smaller;
     text-align: justify;
 }
